@@ -1,0 +1,27 @@
+﻿body {
+    background-color: white;
+}
+
+.interstellar_img {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    width: 200px;
+}
+
+
+
+.jumbotron h1 {
+    font-size: 250%;
+}
+
+.container {
+}
+
+.row {
+    padding: 10px;
+}
+
+.media-body {
+    padding: 20px;
+}
