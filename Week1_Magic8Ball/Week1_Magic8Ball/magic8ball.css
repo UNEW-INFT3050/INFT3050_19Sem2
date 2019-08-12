@@ -1,0 +1,31 @@
+﻿body {
+    background-color: darkblue;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+
+.inputbutton {
+    background-color: #f44336;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 57px;
+    border-radius: 9px;
+}
+
+.answer {
+    border: none;
+    color: white;
+    display: block;
+    font-size: 200px;
+    color: white;
+    text-align: center;
+}
