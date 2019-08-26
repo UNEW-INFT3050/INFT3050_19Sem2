@@ -1,0 +1,61 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Interstellar.master.cs" Inherits="Week5_InterstellarTravel.Interstellar" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Explore the universe!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="Content/superhero.css" rel="stylesheet" />
+    <link href="Content/interstellar.css" rel="stylesheet" />
+    <script src="Scripts/jquery-3.3.1.min.js"> </script>
+    <script src="Scripts/bootstrap.min.js"> </script>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <header>
+        <div class="jumbotron">
+            <h1>Interstellar travel</h1>
+            <asp:Label ID="subblurbLabel" runat="server" Text="foo"></asp:Label>
+            <%--Content to be added to the header--%>
+            <asp:ContentPlaceHolder ID="headerContentPlacement" runat="server">
+                Touch the stars
+            </asp:ContentPlaceHolder>
+        </div>
+
+        <%-- Bootstrap navbar can collapse if viewed on phone --%>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="Default.aspx">
+                <img src="Images/logo.png" class="branding" />
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="Destinations.aspx">Destinations <span class="sr-only">(current)</span></a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <form id="form1" runat="server">
+            <div>
+                <%--Main page content--%>
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </form>
+    </main>
+</body>
+</html>

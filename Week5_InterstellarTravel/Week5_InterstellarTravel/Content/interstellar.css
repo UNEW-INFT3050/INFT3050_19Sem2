@@ -1,0 +1,19 @@
+﻿body {
+}
+
+main {
+    margin: 5px;
+}
+
+.jumbotron {
+    margin-bottom: 0;
+}
+
+
+.branding {
+    max-width: 40px;
+}
+
+.destination_thumb {
+    max-width: 128px;
+}
