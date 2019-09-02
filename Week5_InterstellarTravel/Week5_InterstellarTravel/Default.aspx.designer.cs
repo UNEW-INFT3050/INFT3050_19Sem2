@@ -13,15 +13,12 @@ namespace Week5_InterstellarTravel {
     public partial class Default {
         
         /// <summary>
-        /// Master property.
+        /// ImageRepeater control.
         /// </summary>
         /// <remarks>
-        /// Auto-generated property.
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        public new Week5_InterstellarTravel.Interstellar Master {
-            get {
-                return ((Week5_InterstellarTravel.Interstellar)(base.Master));
-            }
-        }
+        protected global::System.Web.UI.WebControls.Repeater ImageRepeater;
     }
 }
