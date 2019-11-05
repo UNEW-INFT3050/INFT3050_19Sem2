@@ -1,0 +1,26 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">High Scores!</h1>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Score</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var score in Model.Scores)
+            {
+                <tr>
+                    <td> @score.Name</td>
+                    <td> @score.Score</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
